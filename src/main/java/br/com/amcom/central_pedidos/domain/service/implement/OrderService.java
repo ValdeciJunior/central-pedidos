@@ -1,7 +1,9 @@
-package br.com.amcom.central_pedidos.domain.service;
+package br.com.amcom.central_pedidos.domain.service.implement;
 
 import br.com.amcom.central_pedidos.domain.model.Order;
 import br.com.amcom.central_pedidos.domain.repository.OrderRepositoryPort;
+import br.com.amcom.central_pedidos.domain.service.FindOrderUseCase;
+import br.com.amcom.central_pedidos.domain.service.ProcessOrderUseCase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;

@@ -5,7 +5,6 @@ import br.com.amcom.central_pedidos.domain.model.Order;
 import java.util.Optional;
 
 public interface OrderRepositoryPort {
-    // COMENTÁRIO SÊNIOR: Método crucial para o requisito de verificação de duplicidade.
     boolean existsByExternalOrderId(String externalOrderId);
 
     Order save(Order order);
