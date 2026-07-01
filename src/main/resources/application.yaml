@@ -1,3 +1,18 @@
+server:
+  port: 8080
+
 spring:
-  application:
-    name: central-pedidos
+  datasource:
+    url: jdbc:postgresql://localhost:5434/db_orders
+    username: usr_order
+    password: pwd_order_secure123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
